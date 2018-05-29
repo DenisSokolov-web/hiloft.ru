@@ -45,6 +45,7 @@ Route::post('ajax/make_img_crop', 'Ajax\ImageCropController@index');
 Route::post('ajax/photo_store', 'Ajax\PhotoStoreController@index');
 Route::post('ajax/forms_handler', 'Ajax\FormsHandlerController@index');
 Route::post('ajax/hotels-select-handler', 'Ajax\HotelsSelectHandler@index');
+Route::post('ajax/cta-partnership-handler', 'Ajax\CtaPartnershipFormHandler@index');
 
 //
 Route::get('/{address}', ['uses' => 'HotelController@show', 'as' => 'hotel']);

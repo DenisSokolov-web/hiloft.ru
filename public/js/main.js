@@ -223,4 +223,27 @@ $(document).ready(function(){
         );
     });
 
+    /*
+    // МАСКИ ДЛЯ INPUT
+     */
+    $('input[name="phone-number"').mask("9-999-999-99-99")
+
+    /*
+    // AJAX ДЛЯ ФОРМЫ CTA-PARTNERSHIP
+     */
+    $('.js-cta-partnership-submit').on('click', function (e) {
+        e.preventDefault();
+        var $input = $('input[name="phone-number"]');
+
+        $.post(
+            "ajax/cta-partnership-handler",
+            {
+                'phone': $input.val()
+            },
+            function (data) {
+                console.log(data);
+            }
+        )
+    });
+
 });

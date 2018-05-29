@@ -83,8 +83,8 @@
                 </div>
 
                 <form action="#" class="form cta-partner__form">
-                    <input type="text" class="form__input form__input_md" placeholder="Номер телефона">
-                    <button class="btn btn_solid btn_md">отправить</button>
+                    <input type="text" class="form__input form__input_md" name="phone-number" placeholder="Номер телефона">
+                    <button class="btn btn_solid btn_md js-cta-partnership-submit">отправить</button>
                     <p class="cta-partner__agreement">*нажимая на кнопку вы соглашаетесь с условиями обработки ваших персональных данных</p>
                 </form>
 

@@ -31,6 +31,7 @@
 <script src="{{ asset('public/libs/jquery/jquery-3.2.1.min.js') }}"></script>
 <script src="{{ asset('public/libs/jquery-ui/jquery-ui.min.js') }}"></script>
 <script src="{{ asset('public/libs/slick-slider/slick.min.js') }}"></script>
+<script src="{{ asset('public/libs/masked-input/jquery.maskedinput.min.js') }}"></script>
 <script src="{{ asset(('public/libs/viewport-checker/jquery.viewportchecker.min.js')) }}"></script>
 <script src="{{ asset('public/js/main.js') }}"></script>
 

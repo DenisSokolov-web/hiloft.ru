@@ -13,8 +13,8 @@ class BookingFormHandler extends Controller
         $hotel = Hotel::find($request->hotel_id);
 
         $emails =
-            "denis.sokolov-web@yandex.ru,
-            $hotel->email";
+            "denis.sokolov-web@yandex.ru",
+            $hotel->email;
 
         $mail_to = $emails;
 
