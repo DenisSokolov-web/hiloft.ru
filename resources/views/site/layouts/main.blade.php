@@ -33,6 +33,7 @@
 <script src="{{ asset('public/libs/slick-slider/slick.min.js') }}"></script>
 <script src="{{ asset(('public/libs/viewport-checker/jquery.viewportchecker.min.js')) }}"></script>
 <script src="{{ asset('public/js/main.js') }}"></script>
+<script src="{{ asset('public/js/pages-main/common.js') }}"></script>
 
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script>

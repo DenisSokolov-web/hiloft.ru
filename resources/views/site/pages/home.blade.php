@@ -121,10 +121,11 @@
 
                     <div class="booking__form-item">
                         <div class="select">
-                            <select name="country" class="booking__select">
-                                <option value="default" selected="selected">Выберите страну</option>
-                                <option value="russia">Россия</option>
-                                <option value="kazahstan">Казахстан</option>
+                            <select name="country" class="booking__select js-countries-select">
+                                <option selected="selected">Выберите страну</option>
+                                @foreach($hotels as $hotel)
+                                    <option>{{ $hotel->country }}</option>
+                                @endforeach
                             </select>
                             <div class="select__caret">
                                 <span class="icon-caret"></span>
@@ -134,10 +135,8 @@
 
                     <div class="booking__form-item">
                         <div class="select">
-                            <select name="country" class="booking__select">
-                                <option value="default" selected="selected" disabled>Выберите город</option>
-                                <option value="russia">Санкт-Петербург</option>
-                                <option value="kazahstan">Москва</option>
+                            <select name="country" class="booking__select js-cities-select">
+                                <option selected="selected" disabled>Выберите город</option>
                             </select>
                             <div class="select__caret">
                                 <span class="icon-caret"></span>
@@ -147,10 +146,8 @@
 
                     <div class="booking__form-item">
                         <div class="select">
-                            <select name="country" class="booking__select">
+                            <select name="country" class="booking__select js-hotels-select">
                                 <option value="default" selected="selected">Выберите отель</option>
-                                <option value="russia">Шпалерная, 35</option>
-                                <option value="kazahstan">Ленина, 51</option>
                             </select>
                             <div class="select__caret">
                                 <span class="icon-caret"></span>
@@ -159,7 +156,7 @@
                     </div>
 
                     <div class="booking__form-item booking__form-button">
-                        <a href="#" class="btn btn_md btn_solid btn_black-text">Бронировать</a>
+                        <a href="#" class="btn btn_md btn_solid btn_black-text js-hotels-select-submit">Бронировать</a>
                     </div>
 
                 </div>

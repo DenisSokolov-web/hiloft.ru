@@ -1,62 +1,5 @@
 $(document).ready(function () {
 
-    /*--- Start OWL carousel 1 ---*/
-
-    $('.three-main__owl').owlCarousel({
-        loop: true,
-        margin: 10,
-        dots: false,
-        nav: true,
-        navText: ["", ""],
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            600: {
-                items: 3,
-                nav: false
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
-
-    /*--- Start OWL carusel 1 ---*/
-
-    /*--- Start OWL carousel 2 ---*/
-
-    $('.six-main__owl').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: true,
-        dots: false,
-        smartSpeed: 500,
-        navText: ['', ''],
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            616: {
-                items: 2,
-                nav: false
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
-
-    /*--- Start OWL carusel 2 ---*/
-
-
-
-});
-
-$(document).ready(function () {
-
     $('.js-slick-slider_pop-directions').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -126,7 +69,32 @@ $(document).ready(function () {
     HOTELS-SELECT
      */
 
+    $('.js-countries-select').on('change', function () {
+
+        console.log('countries')
+
+        var country = $(this).val();
+        var $selectCity = $('.js-cities-select');
+
+        $.post(
+            "ajax/hotels-select-handler",
+            {
+                'country': country
+            },
+            function (data) {
+                console.log(data)
+                $selectCity.find('.select-hotels__option').remove();
+                $.each(data, function (key, value) {
+                    $selectCity.append("<option class='select-hotels__option'>" + value.city + "</option>");
+                });
+            }
+        );
+
+    });
+
     $('.js-cities-select').on('change', function () {
+
+        console.log('cities')
 
         var city = $(this).val();
         var $selectHotels = $('.js-hotels-select');
