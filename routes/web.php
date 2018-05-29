@@ -13,8 +13,9 @@
 
 Auth::routes();
 
-Route::get('/', 'HomePageController@index')->name('main');
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'PagesController@home')->name('home');
+Route::get('/partnership', 'PagesController@partnership')->name('partnership');
+//Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/login', ['uses' => 'Admin\AdminController@login', 'as' => 'login']);
 
 Route::get('/booking', 'BookingPageController@index');
