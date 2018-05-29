@@ -214,6 +214,25 @@ a {
     padding-top: 100px;
   }
 }
+.conditions {
+  background-image: url("../img/conditions/background.png");
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .conditions {
+    padding-top: 30px;
+    padding-bottom: 150px;
+  }
+}
+
+@media (min-width: 992px) {
+  .conditions {
+    padding-top: 80px;
+  }
+}
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -235,25 +254,6 @@ a {
   max-width: 100%;
   text-align: center;
   cursor: pointer;
-}
-.conditions {
-  background-image: url("../img/conditions/background.png");
-  background-position: center;
-  background-size: cover;
-  padding-bottom: 10px;
-}
-
-@media (min-width: 768px) {
-  .conditions {
-    padding-top: 30px;
-    padding-bottom: 150px;
-  }
-}
-
-@media (min-width: 992px) {
-  .conditions {
-    padding-top: 80px;
-  }
 }
 .cta-franch {
   background-image: url("../img/cta-franch/background.jpg");
@@ -293,6 +293,33 @@ a {
     padding-bottom: 110px !important;
   }
 }
+.directions {
+  background-image: url("../img/directions/background.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 45px 0;
+}
+
+@media (min-width: 768px) {
+  .directions {
+    padding: 60px 0;
+    height: initial;
+  }
+}
+
+@media (min-width: 992px) {
+  .directions {
+    padding: 80px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .directions {
+    padding: 80px 0 120px 0;
+  }
+}
 .designer {
   font-family: "Panton-Regular";
   font-size: 16px;
@@ -330,34 +357,7 @@ a {
   }
 
   .designer {
-    padding-top: 90px;
-  }
-}
-.directions {
-  background-image: url("../img/directions/background.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 45px 0;
-}
-
-@media (min-width: 768px) {
-  .directions {
-    padding: 60px 0;
-    height: initial;
-  }
-}
-
-@media (min-width: 992px) {
-  .directions {
-    padding: 80px 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .directions {
-    padding: 80px 0 120px 0;
+    padding-top: 50px;
   }
 }
 .directions-item {
@@ -1015,6 +1015,74 @@ select {
     width: 1170px;
   }
 }
+.conditions__body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-flow: row;
+  grid-column-gap: 15px;
+  grid-column: span 12;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-row-gap: 55px;
+}
+.conditions__img {
+  grid-column: span 12;
+  position: relative;
+  width: calc(100% + 15px * 2);
+  left: -15px;
+  grid-row: 2;
+}
+
+@media (min-width: 768px) {
+  .conditions__img {
+    width: initial;
+    left: initial;
+  }
+
+  .conditions__img {
+    grid-column: span 6;
+    grid-row: auto;
+  }
+}
+.conditions__row {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-flow: row;
+  grid-column-gap: 15px;
+  grid-row-gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .conditions__row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+.conditions__text {
+  grid-column: span 12;
+  display: grid;
+  grid-row-gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .conditions__text {
+    grid-column: span 6;
+  }
+}
+.conditions__text-body {
+  font-family: "Panton-Light";
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .conditions__text-body {
+    grid-row-gap: 15px;
+  }
+}
 .btn_black-text:hover {
   color: #000 !important;
 }
@@ -1099,74 +1167,6 @@ select {
   .btn_xl {
     height: 66px;
     width: 374px;
-  }
-}
-.conditions__body {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-flow: row;
-  grid-column-gap: 15px;
-  grid-column: span 12;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-row-gap: 55px;
-}
-.conditions__img {
-  grid-column: span 12;
-  position: relative;
-  width: calc(100% + 15px * 2);
-  left: -15px;
-  grid-row: 2;
-}
-
-@media (min-width: 768px) {
-  .conditions__img {
-    width: initial;
-    left: initial;
-  }
-
-  .conditions__img {
-    grid-column: span 6;
-    grid-row: auto;
-  }
-}
-.conditions__row {
-  grid-column: span 12;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-flow: row;
-  grid-column-gap: 15px;
-  grid-row-gap: 30px;
-}
-
-@media (min-width: 768px) {
-  .conditions__row {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-.conditions__text {
-  grid-column: span 12;
-  display: grid;
-  grid-row-gap: 20px;
-}
-
-@media (min-width: 768px) {
-  .conditions__text {
-    grid-column: span 6;
-  }
-}
-.conditions__text-body {
-  font-family: "Panton-Light";
-  display: grid;
-  grid-row-gap: 10px;
-}
-
-@media (min-width: 768px) {
-  .conditions__text-body {
-    grid-row-gap: 15px;
   }
 }
 .cta-franch__btn {
@@ -1282,6 +1282,19 @@ select {
   -ms-flex-align: center;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .directions__slider-arrow {
+    font-size: 40px;
+    background-color: transparent;
+    color: #7f7e7e;
+    cursor: pointer;
+    border: none;
+  }
+
+  .directions__slider-arrow:hover {
+    color: #000;
+  }
+}
 .designer__text {
   grid-column: span 12;
   text-align: center;
@@ -1327,19 +1340,6 @@ select {
 
   .designer__text:after {
     width: 480px;
-  }
-}
-@media (min-width: 768px) {
-  .directions__slider-arrow {
-    font-size: 40px;
-    background-color: transparent;
-    color: #7f7e7e;
-    cursor: pointer;
-    border: none;
-  }
-
-  .directions__slider-arrow:hover {
-    color: #000;
   }
 }
 .directions-item__content {
@@ -1581,10 +1581,13 @@ select {
   font-family: "Panton-Bold";
   font-size: 0.3em;
 }
+.h2_black {
+  color: #1a1a1a;
+}
 .h2_decor:before,
 .h2_decor:after {
   content: '';
-  display: block;
+  display: none;
   height: 3px;
   width: 50%;
   position: relative;
@@ -1611,6 +1614,7 @@ select {
   .h2_decor:after {
     width: 36%;
     height: 7px;
+    display: block;
   }
 
   .h2_decor:before {
@@ -1620,9 +1624,6 @@ select {
   .h2_decor:after {
     bottom: -23pxpx;
   }
-}
-.h2_black {
-  color: #1a1a1a;
 }
 .h2_narrow {
   font-size: 30px;

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{ asset('public/css/animate.css') }}"/>
     <link rel="stylesheet" href="{{ asset('public/css/main.css') }}">
 
-    <title>Document</title>
+    <title>HiLoft - сеть дизайнерских миниотелей</title>
 </head>
 <body>
 

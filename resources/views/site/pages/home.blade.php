@@ -70,7 +70,7 @@
         <!-- SECTION - PROJECTS -->
         <section class="projects">
 
-            <div class="projects__wrapper">
+            <div class="section__wrapper">
 
                 <h2 class="h2 h2_white h2_decor">наши проекты</h2>
 
