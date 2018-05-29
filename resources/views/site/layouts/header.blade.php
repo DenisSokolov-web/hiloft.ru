@@ -14,7 +14,7 @@
         </div>
 
         <div class="header__actions">
-            Ru / Войти
+            <a href="{{ route('login') }}" class="link_no-decor">Войти <span class="icon-login"></span></a>
         </div>
 
         <div class="header__hamburger">

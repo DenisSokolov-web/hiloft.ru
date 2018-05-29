@@ -29,8 +29,8 @@ class PagesController extends BaseController
             '<a href="#primary-screen" class="link_no-decor header__menu-link">начало</a>',
             '<a href="#booking" class="link_no-decor header__menu-link">бронирование</a>',
             '<a href="#contacts" class="link_no-decor header__menu-link">контакты</a>',
-            '<a href="http://franchising.hiloft.ru" class="link_no-decor header__menu-link" target="_blank">франшиза</a><span class="icon-external-link icon_inline-right icon_inline-sm"></span>',
-            '<a href="http://hiloft.ru/partnership" class="link_no-decor header__menu-link" target="_blank">арендаторам</a><span class="icon-external-link icon_inline-right icon_inline-sm"></span>'
+            '<a href="http://franchising.hiloft.ru" class="link_no-decor header__menu-link">франшиза</a><span class="icon-external-link icon_inline-right icon_inline-sm"></span>',
+            '<a href="' . route('partnership') . '" class="link_no-decor header__menu-link">арендаторам</a><span class="icon-external-link icon_inline-right icon_inline-sm"></span>'
         ];
         $this->vars = array_add($this->vars, 'menu', $menu);
 
@@ -45,8 +45,8 @@ class PagesController extends BaseController
             '<a href="#primary-screen" class="link_no-decor header__menu-link">начало</a>',
             '<a href="#cta-partner" class="link_no-decor header__menu-link">заявка</a>',
             '<a href="#contacts" class="link_no-decor header__menu-link">контакты</a>',
-            '<a href="http://hiloft.ru" class="link_no-decor header__menu-link" target="_blank">главная</a><span class="icon-external-link icon_inline-right icon_inline-sm"></span>',
-            '<a href="http://franchising.hiloft.ru" class="link_no-decor header__menu-link" target="_blank">франшиза</a><span class="icon-external-link icon_inline-right icon_inline-sm"></span>'
+            '<a href="' . route('home') . '" class="link_no-decor header__menu-link">главная</a><span class="icon-external-link icon_inline-right icon_inline-sm"></span>',
+            '<a href="http://franchising.hiloft.ru" class="link_no-decor header__menu-link">франшиза</a><span class="icon-external-link icon_inline-right icon_inline-sm"></span>'
         ];
         $this->vars = array_add($this->vars, 'menu', $menu);
 

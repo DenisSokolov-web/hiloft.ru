@@ -161,18 +161,66 @@ $(document).ready(function(){
     });*/
 
     /*
-
+    HOTELS-SELECT
      */
 
+    $('.js-countries-select').on('change', function () {
 
-    $(window).scroll(function () {
-        var scrollTop = $(this).scrollTop();
+        console.log('countries')
 
-        var $el = $('');
-        var parallaxSpeed = 1/50;
-        $el.css({
-            'transform': 'translate(0%,' + scrollTop * parallaxSpeed + '%)'
-        })
-    })
+        var country = $(this).val();
+        var $selectCity = $('.js-cities-select');
+
+        $.post(
+            "ajax/hotels-select-handler",
+            {
+                'country': country
+            },
+            function (data) {
+                $selectCity.find('.select-hotels__option').remove();
+                $.each(data, function (key, value) {
+                    $selectCity.append("<option class='select-hotels__option'>" + value.city + "</option>");
+                });
+            }
+        );
+
+    });
+
+    $('.js-cities-select').on('change', function () {
+
+        console.log('cities')
+
+        var city = $(this).val();
+        var $selectHotels = $('.js-hotels-select');
+
+        $.post(
+            "ajax/hotels-select-handler",
+            {
+                'city': city
+            },
+            function (data) {
+                $selectHotels.find('.select-hotels__option').remove();
+                $.each(data, function (key, value) {
+                    $selectHotels.append("<option class='select-hotels__option'>" + value.address + "</option>");
+                });
+            }
+        );
+
+    });
+
+    $('.js-hotels-select').on('change', function () {
+        var address = $(this).val();
+        var $submit = $('.js-hotels-select-submit');
+
+        $.post(
+            "ajax/hotels-select-handler",
+            {
+                'address': address
+            },
+            function (data) {
+                $submit.attr('href', data.slug)
+            }
+        );
+    });
 
 });
