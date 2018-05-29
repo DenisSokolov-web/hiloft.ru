@@ -1,0 +1,45 @@
+
+.img {
+  max-width: 100%; }
+
+.img-crop-container {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  text-align: center; }
+
+.img-crop-container {
+  max-width: 100%;
+  max-height: 100%; }
+
+.search-result {
+  width: 100%;
+  max-height: 40vh;
+  overflow-y: auto !important;
+  display: none;
+  position: absolute !important;
+  z-index: 2; }
+
+.img-crop-container__crop {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 2; }
+
+.search-result__li {
+  list-style: none;
+  padding: 5px 10px;
+  margin: 0 0 0 -40px;
+  color: #0896D3;
+  border-bottom: 1px #ccc solid;
+  cursor: pointer;
+  transition: 0.3s; }
+  .search-result__li:hover {
+    background: #f5f5f5; }
+
+.card__img_gallery {
+  max-height: 300px;
+  width: auto !important;
+  max-width: 100%;
+  margin: 0 auto; }

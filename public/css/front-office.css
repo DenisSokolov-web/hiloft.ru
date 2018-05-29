@@ -1,0 +1,3250 @@
+
+@import url(../libs/owl-carousel/css/owl.carousel.min.css);
+@import url(../libs/owl-carousel/css/owl.theme.default.min.css);
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PantonBold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PantonHeavy";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "PantonRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active, a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff; }
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+a {
+  color: #337ab7;
+  text-decoration: none; }
+
+a:hover, a:focus {
+  color: #23527c;
+  text-decoration: underline; }
+
+a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; }
+
+figure {
+  margin: 0; }
+
+img {
+  vertical-align: middle; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.img-rounded {
+  border-radius: 6px; }
+
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto; }
+
+.img-circle {
+  border-radius: 50%; }
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto; }
+
+[role="button"] {
+  cursor: pointer; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left; }
+
+.col-xs-12 {
+  width: 100%; }
+
+.col-xs-11 {
+  width: 91.66666667%; }
+
+.col-xs-10 {
+  width: 83.33333333%; }
+
+.col-xs-9 {
+  width: 75%; }
+
+.col-xs-8 {
+  width: 66.66666667%; }
+
+.col-xs-7 {
+  width: 58.33333333%; }
+
+.col-xs-6 {
+  width: 50%; }
+
+.col-xs-5 {
+  width: 41.66666667%; }
+
+.col-xs-4 {
+  width: 33.33333333%; }
+
+.col-xs-3 {
+  width: 25%; }
+
+.col-xs-2 {
+  width: 16.66666667%; }
+
+.col-xs-1 {
+  width: 8.33333333%; }
+
+.col-xs-pull-12 {
+  right: 100%; }
+
+.col-xs-pull-11 {
+  right: 91.66666667%; }
+
+.col-xs-pull-10 {
+  right: 83.33333333%; }
+
+.col-xs-pull-9 {
+  right: 75%; }
+
+.col-xs-pull-8 {
+  right: 66.66666667%; }
+
+.col-xs-pull-7 {
+  right: 58.33333333%; }
+
+.col-xs-pull-6 {
+  right: 50%; }
+
+.col-xs-pull-5 {
+  right: 41.66666667%; }
+
+.col-xs-pull-4 {
+  right: 33.33333333%; }
+
+.col-xs-pull-3 {
+  right: 25%; }
+
+.col-xs-pull-2 {
+  right: 16.66666667%; }
+
+.col-xs-pull-1 {
+  right: 8.33333333%; }
+
+.col-xs-pull-0 {
+  right: auto; }
+
+.col-xs-push-12 {
+  left: 100%; }
+
+.col-xs-push-11 {
+  left: 91.66666667%; }
+
+.col-xs-push-10 {
+  left: 83.33333333%; }
+
+.col-xs-push-9 {
+  left: 75%; }
+
+.col-xs-push-8 {
+  left: 66.66666667%; }
+
+.col-xs-push-7 {
+  left: 58.33333333%; }
+
+.col-xs-push-6 {
+  left: 50%; }
+
+.col-xs-push-5 {
+  left: 41.66666667%; }
+
+.col-xs-push-4 {
+  left: 33.33333333%; }
+
+.col-xs-push-3 {
+  left: 25%; }
+
+.col-xs-push-2 {
+  left: 16.66666667%; }
+
+.col-xs-push-1 {
+  left: 8.33333333%; }
+
+.col-xs-push-0 {
+  left: auto; }
+
+.col-xs-offset-12 {
+  margin-left: 100%; }
+
+.col-xs-offset-11 {
+  margin-left: 91.66666667%; }
+
+.col-xs-offset-10 {
+  margin-left: 83.33333333%; }
+
+.col-xs-offset-9 {
+  margin-left: 75%; }
+
+.col-xs-offset-8 {
+  margin-left: 66.66666667%; }
+
+.col-xs-offset-7 {
+  margin-left: 58.33333333%; }
+
+.col-xs-offset-6 {
+  margin-left: 50%; }
+
+.col-xs-offset-5 {
+  margin-left: 41.66666667%; }
+
+.col-xs-offset-4 {
+  margin-left: 33.33333333%; }
+
+.col-xs-offset-3 {
+  margin-left: 25%; }
+
+.col-xs-offset-2 {
+  margin-left: 16.66666667%; }
+
+.col-xs-offset-1 {
+  margin-left: 8.33333333%; }
+
+.col-xs-offset-0 {
+  margin-left: 0; }
+
+@media (min-width: 768px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left; }
+  .col-sm-12 {
+    width: 100%; }
+  .col-sm-11 {
+    width: 91.66666667%; }
+  .col-sm-10 {
+    width: 83.33333333%; }
+  .col-sm-9 {
+    width: 75%; }
+  .col-sm-8 {
+    width: 66.66666667%; }
+  .col-sm-7 {
+    width: 58.33333333%; }
+  .col-sm-6 {
+    width: 50%; }
+  .col-sm-5 {
+    width: 41.66666667%; }
+  .col-sm-4 {
+    width: 33.33333333%; }
+  .col-sm-3 {
+    width: 25%; }
+  .col-sm-2 {
+    width: 16.66666667%; }
+  .col-sm-1 {
+    width: 8.33333333%; }
+  .col-sm-pull-12 {
+    right: 100%; }
+  .col-sm-pull-11 {
+    right: 91.66666667%; }
+  .col-sm-pull-10 {
+    right: 83.33333333%; }
+  .col-sm-pull-9 {
+    right: 75%; }
+  .col-sm-pull-8 {
+    right: 66.66666667%; }
+  .col-sm-pull-7 {
+    right: 58.33333333%; }
+  .col-sm-pull-6 {
+    right: 50%; }
+  .col-sm-pull-5 {
+    right: 41.66666667%; }
+  .col-sm-pull-4 {
+    right: 33.33333333%; }
+  .col-sm-pull-3 {
+    right: 25%; }
+  .col-sm-pull-2 {
+    right: 16.66666667%; }
+  .col-sm-pull-1 {
+    right: 8.33333333%; }
+  .col-sm-pull-0 {
+    right: auto; }
+  .col-sm-push-12 {
+    left: 100%; }
+  .col-sm-push-11 {
+    left: 91.66666667%; }
+  .col-sm-push-10 {
+    left: 83.33333333%; }
+  .col-sm-push-9 {
+    left: 75%; }
+  .col-sm-push-8 {
+    left: 66.66666667%; }
+  .col-sm-push-7 {
+    left: 58.33333333%; }
+  .col-sm-push-6 {
+    left: 50%; }
+  .col-sm-push-5 {
+    left: 41.66666667%; }
+  .col-sm-push-4 {
+    left: 33.33333333%; }
+  .col-sm-push-3 {
+    left: 25%; }
+  .col-sm-push-2 {
+    left: 16.66666667%; }
+  .col-sm-push-1 {
+    left: 8.33333333%; }
+  .col-sm-push-0 {
+    left: auto; }
+  .col-sm-offset-12 {
+    margin-left: 100%; }
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%; }
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%; }
+  .col-sm-offset-9 {
+    margin-left: 75%; }
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%; }
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%; }
+  .col-sm-offset-6 {
+    margin-left: 50%; }
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%; }
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%; }
+  .col-sm-offset-3 {
+    margin-left: 25%; }
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%; }
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%; }
+  .col-sm-offset-0 {
+    margin-left: 0; } }
+
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left; }
+  .col-md-12 {
+    width: 100%; }
+  .col-md-11 {
+    width: 91.66666667%; }
+  .col-md-10 {
+    width: 83.33333333%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-8 {
+    width: 66.66666667%; }
+  .col-md-7 {
+    width: 58.33333333%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-5 {
+    width: 41.66666667%; }
+  .col-md-4 {
+    width: 33.33333333%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-2 {
+    width: 16.66666667%; }
+  .col-md-1 {
+    width: 8.33333333%; }
+  .col-md-pull-12 {
+    right: 100%; }
+  .col-md-pull-11 {
+    right: 91.66666667%; }
+  .col-md-pull-10 {
+    right: 83.33333333%; }
+  .col-md-pull-9 {
+    right: 75%; }
+  .col-md-pull-8 {
+    right: 66.66666667%; }
+  .col-md-pull-7 {
+    right: 58.33333333%; }
+  .col-md-pull-6 {
+    right: 50%; }
+  .col-md-pull-5 {
+    right: 41.66666667%; }
+  .col-md-pull-4 {
+    right: 33.33333333%; }
+  .col-md-pull-3 {
+    right: 25%; }
+  .col-md-pull-2 {
+    right: 16.66666667%; }
+  .col-md-pull-1 {
+    right: 8.33333333%; }
+  .col-md-pull-0 {
+    right: auto; }
+  .col-md-push-12 {
+    left: 100%; }
+  .col-md-push-11 {
+    left: 91.66666667%; }
+  .col-md-push-10 {
+    left: 83.33333333%; }
+  .col-md-push-9 {
+    left: 75%; }
+  .col-md-push-8 {
+    left: 66.66666667%; }
+  .col-md-push-7 {
+    left: 58.33333333%; }
+  .col-md-push-6 {
+    left: 50%; }
+  .col-md-push-5 {
+    left: 41.66666667%; }
+  .col-md-push-4 {
+    left: 33.33333333%; }
+  .col-md-push-3 {
+    left: 25%; }
+  .col-md-push-2 {
+    left: 16.66666667%; }
+  .col-md-push-1 {
+    left: 8.33333333%; }
+  .col-md-push-0 {
+    left: auto; }
+  .col-md-offset-12 {
+    margin-left: 100%; }
+  .col-md-offset-11 {
+    margin-left: 91.66666667%; }
+  .col-md-offset-10 {
+    margin-left: 83.33333333%; }
+  .col-md-offset-9 {
+    margin-left: 75%; }
+  .col-md-offset-8 {
+    margin-left: 66.66666667%; }
+  .col-md-offset-7 {
+    margin-left: 58.33333333%; }
+  .col-md-offset-6 {
+    margin-left: 50%; }
+  .col-md-offset-5 {
+    margin-left: 41.66666667%; }
+  .col-md-offset-4 {
+    margin-left: 33.33333333%; }
+  .col-md-offset-3 {
+    margin-left: 25%; }
+  .col-md-offset-2 {
+    margin-left: 16.66666667%; }
+  .col-md-offset-1 {
+    margin-left: 8.33333333%; }
+  .col-md-offset-0 {
+    margin-left: 0; } }
+
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left; }
+  .col-lg-12 {
+    width: 100%; }
+  .col-lg-11 {
+    width: 91.66666667%; }
+  .col-lg-10 {
+    width: 83.33333333%; }
+  .col-lg-9 {
+    width: 75%; }
+  .col-lg-8 {
+    width: 66.66666667%; }
+  .col-lg-7 {
+    width: 58.33333333%; }
+  .col-lg-6 {
+    width: 50%; }
+  .col-lg-5 {
+    width: 41.66666667%; }
+  .col-lg-4 {
+    width: 33.33333333%; }
+  .col-lg-3 {
+    width: 25%; }
+  .col-lg-2 {
+    width: 16.66666667%; }
+  .col-lg-1 {
+    width: 8.33333333%; }
+  .col-lg-pull-12 {
+    right: 100%; }
+  .col-lg-pull-11 {
+    right: 91.66666667%; }
+  .col-lg-pull-10 {
+    right: 83.33333333%; }
+  .col-lg-pull-9 {
+    right: 75%; }
+  .col-lg-pull-8 {
+    right: 66.66666667%; }
+  .col-lg-pull-7 {
+    right: 58.33333333%; }
+  .col-lg-pull-6 {
+    right: 50%; }
+  .col-lg-pull-5 {
+    right: 41.66666667%; }
+  .col-lg-pull-4 {
+    right: 33.33333333%; }
+  .col-lg-pull-3 {
+    right: 25%; }
+  .col-lg-pull-2 {
+    right: 16.66666667%; }
+  .col-lg-pull-1 {
+    right: 8.33333333%; }
+  .col-lg-pull-0 {
+    right: auto; }
+  .col-lg-push-12 {
+    left: 100%; }
+  .col-lg-push-11 {
+    left: 91.66666667%; }
+  .col-lg-push-10 {
+    left: 83.33333333%; }
+  .col-lg-push-9 {
+    left: 75%; }
+  .col-lg-push-8 {
+    left: 66.66666667%; }
+  .col-lg-push-7 {
+    left: 58.33333333%; }
+  .col-lg-push-6 {
+    left: 50%; }
+  .col-lg-push-5 {
+    left: 41.66666667%; }
+  .col-lg-push-4 {
+    left: 33.33333333%; }
+  .col-lg-push-3 {
+    left: 25%; }
+  .col-lg-push-2 {
+    left: 16.66666667%; }
+  .col-lg-push-1 {
+    left: 8.33333333%; }
+  .col-lg-push-0 {
+    left: auto; }
+  .col-lg-offset-12 {
+    margin-left: 100%; }
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%; }
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%; }
+  .col-lg-offset-9 {
+    margin-left: 75%; }
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%; }
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%; }
+  .col-lg-offset-6 {
+    margin-left: 50%; }
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%; }
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%; }
+  .col-lg-offset-3 {
+    margin-left: 25%; }
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%; }
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%; }
+  .col-lg-offset-0 {
+    margin-left: 0; } }
+
+.clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after, .container:after, .container-fluid:after, .row:after {
+  clear: both; }
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.pull-right {
+  float: right !important; }
+
+.pull-left {
+  float: left !important; }
+
+.hide {
+  display: none !important; }
+
+.show {
+  display: block !important; }
+
+.invisible {
+  visibility: hidden; }
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+.hidden {
+  display: none !important; }
+
+.affix {
+  position: fixed; }
+
+@-ms-viewport {
+  width: device-width; }
+
+.visible-xs, .visible-sm, .visible-md, .visible-lg {
+  display: none !important; }
+
+.visible-xs-block, .visible-xs-inline, .visible-xs-inline-block, .visible-sm-block, .visible-sm-inline, .visible-sm-inline-block, .visible-md-block, .visible-md-inline, .visible-md-inline-block, .visible-lg-block, .visible-lg-inline, .visible-lg-inline-block {
+  display: none !important; }
+
+@media (max-width: 767px) {
+  .visible-xs {
+    display: block !important; }
+  table.visible-xs {
+    display: table !important; }
+  tr.visible-xs {
+    display: table-row !important; }
+  th.visible-xs, td.visible-xs {
+    display: table-cell !important; } }
+
+@media (max-width: 767px) {
+  .visible-xs-block {
+    display: block !important; } }
+
+@media (max-width: 767px) {
+  .visible-xs-inline {
+    display: inline !important; } }
+
+@media (max-width: 767px) {
+  .visible-xs-inline-block {
+    display: inline-block !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm {
+    display: block !important; }
+  table.visible-sm {
+    display: table !important; }
+  tr.visible-sm {
+    display: table-row !important; }
+  th.visible-sm, td.visible-sm {
+    display: table-cell !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-block {
+    display: block !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-inline {
+    display: inline !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-inline-block {
+    display: inline-block !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md {
+    display: block !important; }
+  table.visible-md {
+    display: table !important; }
+  tr.visible-md {
+    display: table-row !important; }
+  th.visible-md, td.visible-md {
+    display: table-cell !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-block {
+    display: block !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-inline {
+    display: inline !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-inline-block {
+    display: inline-block !important; } }
+
+@media (min-width: 1200px) {
+  .visible-lg {
+    display: block !important; }
+  table.visible-lg {
+    display: table !important; }
+  tr.visible-lg {
+    display: table-row !important; }
+  th.visible-lg, td.visible-lg {
+    display: table-cell !important; } }
+
+@media (min-width: 1200px) {
+  .visible-lg-block {
+    display: block !important; } }
+
+@media (min-width: 1200px) {
+  .visible-lg-inline {
+    display: inline !important; } }
+
+@media (min-width: 1200px) {
+  .visible-lg-inline-block {
+    display: inline-block !important; } }
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important; } }
+
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important; } }
+
+.visible-print {
+  display: none !important; }
+
+@media print {
+  .visible-print {
+    display: block !important; }
+  table.visible-print {
+    display: table !important; }
+  tr.visible-print {
+    display: table-row !important; }
+  th.visible-print, td.visible-print {
+    display: table-cell !important; } }
+
+.visible-print-block {
+  display: none !important; }
+
+@media print {
+  .visible-print-block {
+    display: block !important; } }
+
+.visible-print-inline {
+  display: none !important; }
+
+@media print {
+  .visible-print-inline {
+    display: inline !important; } }
+
+.visible-print-inline-block {
+  display: none !important; }
+
+@media print {
+  .visible-print-inline-block {
+    display: inline-block !important; } }
+
+@media print {
+  .hidden-print {
+    display: none !important; } }
+
+.header__line {
+  background-color: #0b0c0d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 19px 0;
+  color: #fff;
+  font-family: 'PantonBold', sans-serif;
+  font-size: 22px;
+  z-index: 20; }
+
+.header {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center; }
+  .header:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35); }
+
+.header_bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.header__lang {
+  display: inline-block;
+  color: #fff;
+  margin-right: 60px;
+  position: relative; }
+  .header__lang:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #cbcccc;
+    position: absolute;
+    top: 15px;
+    right: -25px; }
+
+.header__login {
+  display: inline-block;
+  position: relative;
+  color: #fff; }
+  .header__login:after {
+    background-image: url(../img/header/__login/login-icon.png);
+    width: 37px;
+    height: 38px;
+    right: -57px;
+    top: 0; }
+
+.header__settings {
+  margin-right: 60px; }
+
+.header__title {
+  font-family: 'PantonHeavy', sans-serif;
+  font-size: 120px;
+  color: #fff;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  flex-direction: column;
+  padding-top: 50%;
+  padding-bottom: 15%;
+  height: 100vh; }
+  @media (min-width: 720px) {
+    .header__title {
+      font-size: 90px;
+      padding-top: 120px;
+      padding-bottom: 0;
+      justify-content: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center; } }
+
+.header__subtitle {
+  font-family: 'PantonBold', sans-serif;
+  font-size: 30px;
+  line-height: 24px;
+  margin-top: 27px; }
+  @media (min-width: 720px) {
+    .header__subtitle {
+      font-size: 36px;
+      margin-bottom: 50px; } }
+  @media (min-width: 960px) {
+    .header__subtitle {
+      margin-top: -27px; } }
+
+.header__columns {
+  justify-content: space-between;
+  align-items: center; }
+
+.header__mobile-menu {
+  background-color: rgba(11, 12, 13, 0.95);
+  z-index: 100;
+  width: 100%;
+  position: absolute;
+  padding-top: 19px; }
+
+.header__mobile {
+  display: none;
+  text-align: center;
+  font-family: 'PantonRegular', sans-serif;
+  border-top: 3px solid #ffffff; }
+  .header__mobile li a {
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 70px;
+    border-top: 1px solid #353535; }
+
+.header__phone-icon {
+  background-image: url("../img/header/__phone/phone-icon.svg");
+  width: 23px;
+  height: 23px; }
+
+.header__phone-text {
+  padding-left: 22px; }
+
+.header__location-icon {
+  background-image: url("../img/header/__location/location-icon.svg");
+  width: 24px;
+  height: 34px; }
+
+.header__mail-text {
+  padding-left: 22px; }
+
+.menu {
+  position: absolute;
+  top: 172px;
+  z-index: 20; }
+
+ul.menu__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  z-index: 8; }
+
+.menu__item {
+  display: inline-block;
+  margin-right: 15px;
+  color: #fff; }
+  .menu__item:last-child {
+    margin-right: 0; }
+
+.menu__link {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'PantonBold', sans-serif;
+  letter-spacing: 2px;
+  padding: 8px 11px; }
+  .menu__link:hover {
+    outline: 1px solid #fff794;
+    color: #fff;
+    text-decoration: none; }
+  .menu__link:visited {
+    color: #fff;
+    text-decoration: none; }
+  .menu__link:active {
+    text-decoration: none;
+    color: #fff; }
+
+.features {
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.features__wrap {
+  text-align: center; }
+
+.features__icon {
+  margin-bottom: 30px;
+  min-height: 82px; }
+
+.price {
+  text-align: center; }
+
+.price__wrap {
+  margin-bottom: 24px; }
+
+.price__item {
+  max-width: 360px;
+  margin-bottom: 40px; }
+
+.price__img img {
+  max-width: 100%; }
+
+.price__content {
+  padding: 48px 33px;
+  border: 1px solid #c6c6c6; }
+
+.price__cena {
+  font-family: 'PantonHeavy', sans-serif;
+  font-size: 30px;
+  line-height: 24px; }
+
+.price__cena_margin {
+  margin: 25px 0; }
+
+.price__content .description{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  min-height: 40px;
+}
+
+.gallery {
+  text-align: center;
+  padding-bottom: 103px; }
+
+.gallery__flex {
+  justify-content: space-between; }
+
+.gallery__item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between; }
+
+.reviews {
+  text-align: center;
+  padding-bottom: 110px; }
+
+.reviews_main-text {
+  font-size: 22px;
+  margin-bottom: 7px; }
+
+.reviews_default-text {
+  font-family: 'PantonRegular', sans-serif;
+  font-size: 18px;
+  line-height: 24px; }
+
+.reviews_button {
+  margin-top: 74px; }
+
+.reviews__carousel {
+  clear: both; }
+
+.reviews__item {
+  padding: 36px 25px 76px 25px;
+  text-align: center;
+  transition: all .35s ease; }
+  .reviews__item:hover {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 42px 0px #e0d9e0;
+    transform: scale(1.1); }
+
+.reviews__photo {
+  margin-bottom: 48px; }
+  .reviews__photo img {
+    border-radius: 50%; }
+
+.reviews__pic {
+  max-width: 163px;
+  margin: auto; }
+
+.reviews__mark {
+  color: #404040;
+  margin-bottom: 25px; }
+
+.review__text {
+  color: #747474; }
+
+.footer {
+  background-color: #0b0c0d;
+  padding: 73px 0 43px 0; }
+
+.footer__wrap {
+  align-items: center;
+  justify-content: space-between; }
+
+.footer__heading {
+  font-family: 'PantonBold', sans-serif;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px; }
+
+.footer__line {
+  background: #803532;
+  width: 56px;
+  height: 3px;
+  margin-bottom: 23px; }
+
+.footer__contacts {
+  font-family: 'PantonRegular', sans-serif;
+  font-size: 22px;
+  color: #fff; }
+
+.footer__location:before {
+  background-image: url(../img/footer/__location/footer-location.png);
+  width: 24px;
+  height: 28px;
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat; }
+
+.footer__location span {
+  padding-left: 43px;
+  display: inline-block;
+  margin-bottom: 20px;
+  line-height: 28px; }
+
+.footer__mail {
+  margin-bottom: 38px; }
+
+.footer__socials {
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle; }
+  @media (min-width: 720px) {
+    .footer__socials {
+      margin-left: 72px; } }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666; }
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #666; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: "roboto-example", sans-serif;
+  overflow-x: hidden;
+  opacity: 1;
+  color: #1a1a1a; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+h2.heading {
+  font-family: 'PantonHeavy', sans-serif;
+  font-size: 44px;
+  text-transform: uppercase; }
+
+.heading_border {
+  border-bottom: 7px solid #f9e32e;
+  display: inline-block;
+  padding: 0 50px;
+  margin-bottom: 58px; }
+
+svg {
+  transition: all .35s ease; }
+
+.before_icon:before {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat; }
+
+.before_icon span {
+  padding-left: 40px; }
+
+.after_icon:after {
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat; }
+
+.phone-icon {
+  position: relative;
+  margin-bottom: 5px; }
+  .phone-icon:before {
+    left: 0;
+    top: 6px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/header/__phone/phone-icon.svg); }
+
+.mail-icon {
+  position: relative; }
+  .mail-icon:before {
+    left: 0;
+    top: 7px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/header/__mail/mail-icon.png); }
+
+.button {
+  font-family: 'PantonHeavy', sans-serif;
+  line-height: 24px;
+  border: 2px solid #f9e32e;
+  border-radius: 5px;
+  color: #1a1a1a !important;
+  display: inline-block;
+  text-transform: uppercase; }
+  .button:hover {
+    background-color: #f9e32e;
+    cursor: pointer;
+    color: #ffffff !important; }
+
+.button_small {
+  letter-spacing: 1px;
+  padding: 19px 58px; }
+
+.button_big {
+  font-size: 22px;
+  padding: 27px 66px; }
+
+.button_active {
+  background-color: #f9e32e; }
+  .button_active:hover {
+    background-color: transparent; }
+
+.flex {
+  display: flex;
+  flex-flow: row wrap; }
+
+.sect {
+  padding: 98px 0 51px 0; }
+
+.main-text {
+  font-family: 'PantonBold', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase; }
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #f9e32e;
+  border: none; }
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border: 1px solid #212121; }
+
+.socials_icon {
+  fill: #fff;
+  margin-right: 35px; }
+  .socials_icon:last-child {
+    margin-right: 0; }
+  .socials_icon:hover svg {
+    fill: #903d3b; }
+
+#nav-icon3 {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  margin-top: 3px; }
+  #nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out; }
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px; }
+
+#nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
+  top: 10px; }
+
+#nav-icon3 span:nth-child(4) {
+  top: 20px; }
+
+#nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+#nav-icon3.open span:nth-child(2) {
+  transform: rotate(45deg); }
+
+#nav-icon3.open span:nth-child(3) {
+  transform: rotate(-45deg); }
+
+#nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%; }
+
+.icon {
+  background-repeat: no-repeat; }
+
+.icon-flex {
+  align-items: center;
+  justify-content: flex-start; }
+
+.header__location-text {
+  padding-left: 22px;
+  line-height: 24px; }
+
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /*price styles*/
+  .price__item {
+    margin-bottom: 30px; }
+  .footer__logo {
+    margin-bottom: 30px; }
+  .button_small {
+    padding: 19px 34px; }
+  .gallery__column {
+    margin-bottom: 20px; }
+  .full-height {
+    order: 3;
+    margin: auto; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /*price sttles*/
+  .price__item {
+    max-width: 320px; }
+  .features__wrap {
+    margin-bottom: 40px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /*price styles*/
+  .price__item {
+    margin: 40px auto; }
+  .header__columns {
+    padding: 0 15px; }
+  .header__columns {
+    justify-content: space-between; }
+  .header__location-pad {
+    padding-top: 8px; }
+  .header__phone-pad {
+    padding-bottom: 8px; }
+  .heading_border {
+    margin-bottom: 25px; }
+  .border-mobile {
+    border-bottom: 1px solid #858686; }
+  .gallery__flex {
+    justify-content: center; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .button_big {
+    font-size: 18px;
+    padding: 16px 20px; }
+  /*heading styles*/
+  h2.heading {
+    font-size: 22px; }
+  .header__img {
+    max-width: 70px; }
+  .header__contacts {
+    font-size: 11px; }
+  .header__title {
+    font-size: 60px;
+    line-height: 40px; }
+  .header__subtitle {
+    font-size: 18px; }
+  .header__location-text {
+    line-height: 1.2em; }
+  .button_small {
+    padding: 19px 38px; }
+  .gallery__column {
+    margin-bottom: 20px; }
+  .footer__socials {
+    margin-left: 5px; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
+
+.a {
+  text-decoration: none;
+  color: #fff; }
+  .a:visited {
+    text-decoration: none;
+    color: #fff; }
+  .a:active {
+    text-decoration: none;
+    color: #fff; }
+
+
+
+.features {
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.footer {
+  background-color: #0b0c0d;
+  padding: 73px 0 43px 0; }
+
+.gallery {
+  text-align: center;
+  padding-bottom: 103px; }
+
+.header {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center; }
+  .header:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35); }
+
+.header_bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.hexagon {
+  position: absolute;
+  top: 32px;
+  opacity: 1; }
+  @media (min-width: 720px) {
+    .hexagon {
+      left: 30px;
+      top: 33px; } }
+  @media (min-width: 960px) {
+    .hexagon {
+      left: 84px;
+      opacity: 0; } }
+  .hexagon:hover {
+    opacity: 1; }
+
+.menu {
+  position: absolute;
+  top: 172px;
+  z-index: 20; }
+
+.price {
+  text-align: center; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.pop-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  display: none; }
+
+.reviews {
+  text-align: center;
+  padding-bottom: 110px; }
+
+.reviews_main-text {
+  font-size: 22px;
+  margin-bottom: 7px; }
+
+.reviews_default-text {
+  font-family: 'PantonRegular', sans-serif;
+  font-size: 18px;
+  line-height: 24px; }
+
+.reviews_button {
+  margin-top: 74px; }
+
+.two-main-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 270px;
+  text-align: center; }
+
+.two-main-item__img {
+  margin-bottom: 27px; }
+
+.two-main-item__title {
+  color: #1d1d1c;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px; }
+
+#yandex-map {
+  height: 450px;
+  width: 100%; }
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  display: none;
+  padding-right: 15px; }
+  @media (min-width: 720px) {
+    .fixed {
+      display: block; } }
+
+.button_black-text:hover {
+  color: #000 !important; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.button_disabled {
+  opacity: .5; }
+
+.features__icon {
+  margin-bottom: 30px;
+  min-height: 82px; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.features__item {
+  height: 137px;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center; }
+
+
+.features__wrap {
+  text-align: center; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.footer__map {
+  display: none; }
+  @media (min-width: 720px) {
+    .footer__map {
+      display: block; } }
+
+.footer__heading {
+  font-family: 'PantonBold', sans-serif;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 8px; }
+
+.footer__contacts {
+  font-family: 'PantonRegular', sans-serif;
+  font-size: 22px;
+  color: #fff; }
+
+.footer__line {
+  background: #803532;
+  width: 56px;
+  height: 3px;
+  margin-bottom: 23px; }
+
+.footer__location:before {
+  background-image: url(../img/footer/__location/footer-location.png);
+  width: 24px;
+  height: 28px;
+  content: '';
+  position: absolute;
+  background-repeat: no-repeat; }
+
+.footer__location span {
+  padding-left: 43px;
+  display: inline-block;
+  margin-bottom: 20px;
+  line-height: 28px; }
+
+.footer__mail {
+  margin-bottom: 38px; }
+
+.footer__socials {
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: middle; }
+  @media (min-width: 720px) {
+    .footer__socials {
+      margin-left: 72px; } }
+
+.footer__wrap {
+  align-items: center;
+  justify-content: space-between; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.feedback__photo {
+  height: 163px;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.feedback__text {
+  min-height: 120px; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form_pop-up {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  height: 100%; }
+
+.form__calculate {
+  font-family: "PantonBold"; }
+  @media (min-width: 720px) {
+    .form__calculate {
+      padding: 20px 0; } }
+
+.form__calculate_sum {
+  font-size: 24px; }
+
+.form__close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form__header {
+  padding-bottom: 0; }
+  @media (min-width: 720px) {
+    .form__header {
+      padding-bottom: 25px; } }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form__input {
+  width: 100%;
+  font-family: "PantonRegular";
+  font-size: 18px;
+  padding: 12px 20px;
+  border: 1px solid #d1d1d1; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form__input-group {
+  text-align: left; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form__label {
+  font-family: "PantonBold";
+  font-size: 18px; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form__submit {
+  background-color: transparent; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+@media (min-width: 720px) {
+  .form__textarea {
+    margin-bottom: 25px; } }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form__title {
+  font-size: 24px;
+  font-family: "PantonHeavy"; }
+  @media (min-width: 720px) {
+    .form__title {
+      font-size: 36px; } }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form__title_booking-item {
+  font-size: 18px;
+  font-family: "PantonRegular"; }
+  @media (min-width: 720px) {
+    .form__title_booking-item {
+      font-size: 24px; } }
+
+.gallery__flex {
+  justify-content: space-between; }
+
+.gallery__item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between; }
+
+.header__columns {
+  justify-content: space-between;
+  align-items: center; }
+
+
+
+.header__lang {
+  display: inline-block;
+  color: #fff;
+  margin-right: 60px;
+  position: relative; }
+  .header__lang:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #cbcccc;
+    position: absolute;
+    top: 15px;
+    right: -25px; }
+
+.header__line {
+  background-color: #0b0c0d;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 19px 0;
+  color: #fff;
+  font-family: 'PantonBold', sans-serif;
+  font-size: 22px;
+  z-index: 20; }
+
+.header__location-icon {
+  background-image: url("../img/header/__location/location-icon.svg");
+  width: 24px;
+  height: 34px; }
+
+
+.header__login {
+  display: inline-block;
+  position: relative;
+  color: #fff; }
+  .header__login:after {
+    background-image: url(../img/header/__login/login-icon.png);
+    width: 37px;
+    height: 38px;
+    right: -57px;
+    top: 0; }
+
+
+.header__mail-icon {
+  background-image: url("../img/header/__mail/mail-icon.svg");
+  width: 22px;
+  height: 18px; }
+
+.header__mail-text {
+  padding-left: 22px; }
+
+.header__mobile {
+  display: none;
+  text-align: center;
+  font-family: 'PantonRegular', sans-serif;
+  border-top: 3px solid #ffffff; }
+  .header__mobile li a {
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 70px;
+    border-top: 1px solid #353535; }
+
+.header__mobile-menu {
+  background-color: rgba(11, 12, 13, 0.95);
+  z-index: 100;
+  width: 100%;
+  position: absolute;
+  padding-top: 19px; }
+
+
+.header__phone-text {
+  padding-left: 22px; }
+
+.header__phone-icon {
+  background-image: url("../img/header/__phone/phone-icon.svg");
+  width: 23px;
+  height: 23px; }
+
+.header__settings {
+  margin-right: 60px; }
+
+.header__subtitle {
+  font-family: 'PantonBold', sans-serif;
+  font-size: 30px;
+  line-height: 24px;
+  margin-top: 27px; }
+  @media (min-width: 720px) {
+    .header__subtitle {
+      font-size: 36px;
+      margin-bottom: 50px; } }
+  @media (min-width: 960px) {
+    .header__subtitle {
+      margin-top: -27px; } }
+
+.header__title {
+  font-family: 'PantonHeavy', sans-serif;
+  font-size: 120px;
+  color: #fff;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  flex-direction: column;
+  padding-top: 50%;
+  padding-bottom: 15%;
+  height: 100vh; }
+  @media (min-width: 720px) {
+    .header__title {
+      font-size: 90px;
+      padding-top: 120px;
+      padding-bottom: 0;
+      justify-content: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center; } }
+
+.header__title-h1 {
+  font-size: 90px; }
+  @media (min-width: 720px) {
+    .header__title-h1 {
+      font-size: 120px; } }
+
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.link_no-underline:hover {
+  text-decoration: none; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.link_nodecor {
+  text-decoration: none;
+  color: inherit; }
+  .link_nodecor:hover {
+    color: inherit; }
+
+.menu__item {
+  display: inline-block;
+  margin-right: 15px;
+  color: #fff; }
+  .menu__item:last-child {
+    margin-right: 0; }
+
+.menu__link {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'PantonBold', sans-serif;
+  letter-spacing: 2px;
+  padding: 8px 11px; }
+  .menu__link:hover {
+    outline: 1px solid #fff794;
+    color: #fff;
+    text-decoration: none; }
+  .menu__link:visited {
+    color: #fff;
+    text-decoration: none; }
+  .menu__link:active {
+    text-decoration: none;
+    color: #fff; }
+
+ul.menu__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  z-index: 8; }
+
+.price__content {
+  padding: 48px 33px;
+  border: 1px solid #c6c6c6; }
+
+.price__img img {
+  max-width: 100%; }
+
+.price__cena {
+  font-family: 'PantonHeavy', sans-serif;
+  font-size: 30px;
+  line-height: 24px; }
+
+.price__cena_margin {
+  margin: 25px 0; }
+
+.price__item {
+  max-width: 360px;
+  margin-bottom: 40px; }
+
+.price__name {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  min-height: 80px; }
+
+.price__wrap {
+  margin-bottom: 24px; }
+
+.pop-up__body {
+  text-align: center;
+  background-color: #fefefe;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 15px;
+  padding-top: 50px; }
+  @media (min-width: 720px) {
+    .pop-up__body {
+      padding: 30px 80px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      overflow-y: auto; } }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.pop-up__close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block; }
+  .pop-up__close-button:hover {
+    cursor: pointer; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.pop-up__overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: auto;
+  min-height: 100vh; }
+  @media (min-width: 720px) {
+    .pop-up__overlay {
+      padding: 2em; } }
+
+.reviews__carousel {
+  clear: both; }
+
+.reviews__item {
+  padding: 36px 25px 76px 25px;
+  text-align: center;
+  transition: all .35s ease; }
+  .reviews__item:hover {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 42px 0px #e0d9e0;
+    transform: scale(1.1); }
+
+.reviews__mark {
+  color: #404040;
+  margin-bottom: 25px; }
+
+.reviews__photo {
+  margin-bottom: 48px; }
+  .reviews__photo img {
+    border-radius: 50%; }
+
+.reviews__pic {
+  max-width: 163px;
+  margin: auto; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.rooms__item:hover {
+  -webkit-box-shadow: 0 0 12px #d0d0d0;
+  -moz-box-shadow: 0 0 12px #d0d0d0;
+  box-shadow: 0 0 12px #8e8e8e; }
+
+.review__text {
+  color: #747474; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form__calculate_sum {
+  font-size: 24px; }
+
+.form__label_block {
+  display: block;
+  margin-top: 8px; }
+
+.header__a_mobile {
+  display: block; }
+
+.header__line_sticky-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+  background-color: rgba(0, 0, 0, 0.92); }
+
+

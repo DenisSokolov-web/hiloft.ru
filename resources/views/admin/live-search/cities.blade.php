@@ -1,0 +1,1 @@
+<li class="collection-item search-result__li"><span class="value-to-insert">{{ $_POST['name'] }}</span></li>

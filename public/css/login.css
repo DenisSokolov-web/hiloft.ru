@@ -1,0 +1,757 @@
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form-login {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.section-container {
+  height: 100%; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form-login__container {
+  background-color: rgba(26, 26, 26, 0.9);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 8px 13.856px 51.84px 20.16px rgba(0, 1, 6, 0.35);
+  -moz-box-shadow: 8px 13.856px 51.84px 20.16px rgba(0, 1, 6, 0.35);
+  box-shadow: 8px 13.856px 51.84px 20.16px rgba(0, 1, 6, 0.35);
+  width: 100%;
+  text-align: center;
+  padding: 40px; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form-login__input {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.67);
+  font-size: 20px;
+  font-family: "Panton Light Italic";
+  padding: 20px; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form-login__input-group {
+  margin: 20px 0;
+  text-align: left;
+  max-width: 100%; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form-login__item {
+  display: block;
+  width: 330px;
+  max-width: 100%;
+  height: 50px;
+  border: none; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form-login__label {
+  color: #fff;
+  font-family: "Panton Light Italic"; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.login-form__role-name {
+  width: 50%;
+  padding: 10px 0;
+  border-top: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer; }
+  .login-form__role-name:hover {
+    text-decoration: underline; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.login-form__role-select {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  width: 400px;
+  max-width: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  margin-top: 40px;
+  font-weight: 800;
+  font-family: "Panton";
+  text-transform: uppercase;
+  letter-spacing: .1em; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form-login__submit {
+  background-color: #f9e32e;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Panton";
+  text-transform: uppercase; }
+  .form-login__submit:hover {
+    background-color: #f8e862; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.joombotron_login {
+  background-image: url("../img/backgrounds/login.jpg");
+  height: 100vh; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.section-container__item {
+  height: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.form-login__input-group_submit {
+  margin-top: 35px; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.login-form__role-name_active {
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  border-bottom: none;
+  color: #fff; }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PantonRegular/PantonRegular.eot");
+  src: url("../fonts/PantonRegular/PantonRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonRegular/PantonRegular.woff") format("woff"), url("../fonts/PantonRegular/PantonRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/PantonBold/PantonBold.eot");
+  src: url("../fonts/PantonBold/PantonBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonBold/PantonBold.woff") format("woff"), url("../fonts/PantonBold/PantonBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot");
+  src: url("../fonts/PantonHeavy/PantonHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/PantonHeavy/PantonHeavy.woff") format("woff"), url("../fonts/PantonHeavy/PantonHeavy.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Panton Light";
+  src: url("../fonts/Panton/Panton-Light.otf"); }
+
+@font-face {
+  font-family: "Panton Light Italic";
+  src: url("../fonts/Panton/Panton-Light-Italic.otf"); }
+
+.login-form__role-name_left {
+  border-right: 3px solid rgba(255, 255, 255, 0.3); }
