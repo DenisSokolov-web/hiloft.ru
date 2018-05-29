@@ -76,33 +76,18 @@
 
                 <div class="slider projects__slider">
 
-                    <div class="projects-item">
-                        <div class="projects-item__img-overlay">
-                            <img src="{{ asset('public/img/projects/moscow.jpg') }}" class="projects-item__img" alt="Москва">
+                    @foreach($projects as $project)
+                        <div class="projects-item">
+                            <div class="projects-item__img-overlay">
+                                @if($project->link)
+                                    <a href="{{ route('hotel', $project->link) }}" class="projects-item__img"><img src="{{ asset('public/img/projects') . '/' . $project->img_src }}" alt="{{ $project->city }}"></a>
+                                @else
+                                    <img src="{{ asset('public/img/projects') . '/' . $project->img_src }}" class="projects-item__img" alt="{{ $project->city }}">
+                                @endif
+                            </div>
+                            <p class="projects-item__title">{{ $project->city }}</p>
                         </div>
-                        <p class="projects-item__title">Москва</p>
-                    </div>
-
-                    <div class="projects-item">
-                        <div class="projects-item__img-overlay">
-                            <img src="{{ asset('public/img/projects/spb.jpg') }}" class="projects-item__img" alt="Санкт-Петербург">
-                        </div>
-                        <p class="projects-item__title">Санкт-Петербург</p>
-                    </div>
-
-                    <div class="projects-item">
-                        <div class="projects-item__img-overlay">
-                            <img src="{{ asset('public/img/projects/krasnodar.jpg') }}" class="projects-item__img" alt="Краснодар">
-                        </div>
-                        <p class="projects-item__title">Краснодар</p>
-                    </div>
-
-                    <div class="projects-item">
-                        <div class="projects-item__img-overlay">
-                            <img src="{{ asset('public/img/projects/rostov.jpg') }}" class="projects-item__img" alt="Ростов-На-Дону">
-                        </div>
-                        <p class="projects-item__title">Ростов-На-Дону</p>
-                    </div>
+                    @endforeach
 
                 </div>
 
@@ -182,37 +167,47 @@
                         </div>
                         <div class="directions-item__content">
                             <p class="directions-item__title">Милан</p>
+                            <p class="directions-item__text">- 6 миниотелей -</p>
+                        </div>
+                    </div>
+
+                    <div class="directions-item">
+                        <div class="directions-item__img-overlay">
+                            <img src="{{ asset('public/img/directions/london.jpg') }}" alt="" class="directions-item__img">
+                        </div>
+                        <div class="directions-item__content">
+                            <p class="directions-item__title">Лондон</p>
                             <p class="directions-item__text">- 8 миниотелей -</p>
                         </div>
                     </div>
 
                     <div class="directions-item">
                         <div class="directions-item__img-overlay">
-                            <img src="{{ asset('public/img/directions/milan.jpg') }}" alt="" class="directions-item__img">
+                            <img src="{{ asset('public/img/directions/berlin.jpg') }}" alt="" class="directions-item__img">
                         </div>
                         <div class="directions-item__content">
-                            <p class="directions-item__title">Милан</p>
-                            <p class="directions-item__text">- 8 миниотелей -</p>
+                            <p class="directions-item__title">Берлин</p>
+                            <p class="directions-item__text">- 9 миниотелей -</p>
                         </div>
                     </div>
 
                     <div class="directions-item">
                         <div class="directions-item__img-overlay">
-                            <img src="{{ asset('public/img/directions/milan.jpg') }}" alt="" class="directions-item__img">
+                            <img src="{{ asset('public/img/directions/praga.jpg') }}" alt="" class="directions-item__img">
                         </div>
                         <div class="directions-item__content">
-                            <p class="directions-item__title">Милан</p>
-                            <p class="directions-item__text">- 8 миниотелей -</p>
+                            <p class="directions-item__title">Прага</p>
+                            <p class="directions-item__text">- 5 миниотелей -</p>
                         </div>
                     </div>
 
                     <div class="directions-item">
                         <div class="directions-item__img-overlay">
-                            <img src="{{ asset('public/img/directions/milan.jpg') }}" alt="" class="directions-item__img">
+                            <img src="{{ asset('public/img/directions/madrid.jpg') }}" alt="" class="directions-item__img">
                         </div>
                         <div class="directions-item__content">
-                            <p class="directions-item__title">Милан</p>
-                            <p class="directions-item__text">- 8 миниотелей -</p>
+                            <p class="directions-item__title">Мадрид</p>
+                            <p class="directions-item__text">- 6 миниотелей -</p>
                         </div>
                     </div>
 
