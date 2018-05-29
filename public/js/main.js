@@ -234,16 +234,21 @@ $(document).ready(function(){
     $('.js-cta-partnership-submit').on('click', function (e) {
         e.preventDefault();
         var $input = $('input[name="phone-number"]');
+        var $val = $input.val();
 
-        $.post(
-            "ajax/cta-partnership-handler",
-            {
-                'phone': $input.val()
-            },
-            function (data) {
-                console.log(data);
-            }
-        )
+        if ($val.length > 0)
+        {
+            $.post(
+                "ajax/cta-partnership-handler",
+                {
+                    'phone': $val
+                },
+                function (data) {
+                    console.log(data);
+                }
+            )
+            $input.val('Ваша заявка принята')
+        }
     });
 
 });
