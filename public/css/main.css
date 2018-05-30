@@ -1563,6 +1563,11 @@ select {
   opacity: .8;
   padding-left: 25px;
 }
+.h1__subheader {
+  display: block;
+  font-family: "Panton-Bold";
+  font-size: 0.3em;
+}
 .h1_sm {
   font-size: 36px;
   line-height: .8em;
@@ -1575,11 +1580,6 @@ select {
     display: -ms-flexbox;
     display: flex;
   }
-}
-.h1__subheader {
-  display: block;
-  font-family: "Panton-Bold";
-  font-size: 0.3em;
 }
 .h2_black {
   color: #1a1a1a;
@@ -1796,8 +1796,8 @@ select {
 
   .header__menu {
     display: inline-block;
-    position: relative;
-    left: -320px;
+    position: absolute;
+    left: -350px;
     width: auto !important;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.75);
