@@ -15,8 +15,8 @@
             </h1>
 
             <div class="primary-screen__actions">
-                <a href="#" class="btn btn_lg btn_solid">бронирование</a>
-                <a href="#" class="btn btn_lg btn_solid">Франшиза</a>
+                <a href="#booking" class="btn btn_lg btn_solid">бронирование</a>
+                <a href="http://franchising.hiloft.ru" class="btn btn_lg btn_solid">Франшиза</a>
             </div>
 
         </div>
