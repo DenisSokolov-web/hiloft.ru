@@ -30,7 +30,7 @@ class PagesController extends BaseController
             '<a href="#booking" class="link_no-decor header__menu-link">бронирование</a>',
             '<a href="#contacts" class="link_no-decor header__menu-link">контакты</a>',
             '<a href="http://franchising.hiloft.ru" class="link_no-decor header__menu-link">франшиза</a><span class="icon-external-link icon_inline-right icon_inline-sm"></span>',
-            '<a href="' . route('partnership') . '" class="link_no-decor header__menu-link">арендаторам</a><span class="icon-external-link icon_inline-right icon_inline-sm"></span>'
+            '<a href="' . route('partnership') . '" class="link_no-decor header__menu-link">арендодателям</a><span class="icon-external-link icon_inline-right icon_inline-sm"></span>'
         ];
         $this->vars = array_add($this->vars, 'menu', $menu);
 

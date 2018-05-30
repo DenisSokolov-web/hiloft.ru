@@ -99,6 +99,7 @@ $(document).ready(function(){
     var viewportWidthDesktop = 1200;
     var viewportCurrent = screen.width;
     var $select = $('select');
+    var $caret = $('.select__caret');
 
     $select.on('blur', function () {
         var $caret = $(this).siblings('.select__caret');
@@ -138,6 +139,19 @@ $(document).ready(function(){
         $hamb.toggleClass('is-active');
         $menu.slideToggle();
     }
+
+    $select.on('click', function () {
+        var $caret = $(this).siblings('.select__caret');
+
+        if (viewportCurrent < viewportWidthDesktop && $caret.hasClass('select__caret_active')) {
+            console.log('mobile');
+            return;
+        } else {
+            $caret.toggleClass('select__caret_active');
+            console.log('desktop');
+        }
+
+    });
 
     /*
     // ПЛАВНЫЙ СКРОЛЛ К ЯКОРЮ
