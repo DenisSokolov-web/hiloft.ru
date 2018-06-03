@@ -224,7 +224,7 @@
 
                 <img src="{{ asset('public/img/cta-franch/lines.png') }}" alt="линии" class="cta-franch__lines">
                 <p class="cta-franch__text">Работайте с HiLoft и зарабатывайте от <span class="cta-franch__figure">2<span class="figure__delimeter">000</span>000</span> в год</p>
-                <a href="#" class="btn btn_transp btn_sm cta-franch__btn">франшиза</a>
+                <a href="http://franchising.hiloft.ru" class="btn btn_transp btn_sm cta-franch__btn">франшиза</a>
 
             </div>
 
